@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="KO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1, user-scalable=yes, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fullpage.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="icon" href="./images/favicon.png">
+    <title>청미동 靑美洞</title>
+</head>
+<body>
+    <div class="btn-area">
+        <div class="scroll-btn">
+            <div class="btn-svg">
+                <img src="./images/scroll.svg" alt="scroll down button">
+            </div>
+            <div class="btn-text">
+                <p>SCROLL DOWN</p>
+            </div>
+        </div>
+        <div class="totop-btn">
+            <div class="btn-svg">
+                <img src="./images/tothetop.svg" alt="to the top button">
+            </div>
+            <div class="btn-text2">
+                <p>TO THE TOP</p>
+            </div>
+        </div>
+    </div>
+    <div id="fullpage">
+        <!--커버 비디오-->
+        <div class="section s0">
+            <div class="easter-egg"></div>
+            <video id="myVideo" loop muted data-autoplay>
+                <source src="./images/cover.mp4" type="video/mp4">
+            </video>
+            <!-- <div class="layer">
+                <h1>청미동 로고</h1>
+                <img src="./images/logo_main.svg" alt="메인 로고">
+            </div> -->
+        </div>
+        <!--메인 비디오-->
+        <div class="section s1">
+            <div class="title-container">
+                <div class="title-text">
+                    <p>우리동네 아트테리어 플랫폼</p>
+                    <h1>청미동<span>靑美洞</span></h1>
+                </div>
+                <div class="title-video">
+                    <div class="video-text"><h3>청미동 프로모션 영상</h3></div>
+                    <video controls id="title-video" poster="./images/poster.jpg">
+                    <source src="./images/main.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <!--아트테리어-->
+        <div class="section s2">
+            <div class="s2-container">
+                <div class="artterior">
+                    <h2>아트테리어<span>Art+Interior</span></h2>
+                    <p>아트테리어란 아트(Art)와 인테리어(Interior)의 합성어 입니다. 현재 서울시가 주도하여 실시하고 있는 우리동네 가게 아트테리어 사업은 회화, 전시, 공예 등을 전공한 청년 예술가가 동네 가게의 간판, 벽화 등 점포 인테리어와, 공간 리모델링, 브랜드(BI), 상품 패키지 제작까지 가게의 특색에 맞춰 리뉴얼 할 수 있도록 아티스트와 소상공인과 함께 협업할 수 있도록 이어주는 사업입니다</p>
+                </div>
+                <div class="artterior-circle">
+                    <div class="artterior-circle-1"><h3>아트테리어</h3></div>
+                    <div class="artterior-circle-line"></div>
+                    <div class="artterior-circle-2"><h3>소상공인</h3></div>
+                    <div class="artterior-circle-2"><h3>지자체(서울시)</h3></div>
+                    <div class="artterior-circle-2"><h3>청년 예술가</h3></div>
+                </div>
+                <div class="artterior-limit">
+                    <div class="limit1">
+                        <h2>기존 사업의 한계</h2>
+                    </div>
+                    <div class="limit-container">
+                        <div class="limit2">
+                            <div class="li-circle"><h2>제한적 지역</h2></div>
+                            <div class="li-circle"><h2>비용 및 발품문제</h2></div>
+                        </div>
+                        <div class="limit2">
+                            <div class="li-circle"><h2>제한적 참여대상</h2></div>
+                            <div class="li-circle"><h2>복잡한 신청과정</h2></div>
+                        </div>
+                        <div class="limit2">
+                            <div class="li-circle"><h2>시민 참여 불가능</h2></div>
+                            <div class="li-circle"><h2>소량 제작 업체</h2></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--동향조사-->
+        <div class="section s3">
+            <div class="s3-container">
+                <div class="low1">
+                    <div class="sum1">
+                        <h2>예술가와 소상공인의 위기</h2>
+                        <p>최근 코로나 19와 자연 재해로 인해 예술가와 사업장의 어려움이 심화되고 있음에도 불구하고 <span>정부의 지원은 미미한 상황입니다.</span></p>
+                    </div>
+                    <div class="chart1">
+                        <div class="chart1-1">
+                            <h4>소상공인 매출액 감소</h4>
+                            <p><span class="per"></span>%</p>
+                            <div class="source"><p>출처: 소상공인협회</p></div>
+                        </div>
+                        <div class="chart1-2">
+                            <h4>프리랜서 예술인 고용피해</h4>
+                            <p><span class="bill"></span>억원</p>
+                            <div class="source"><p>출처: 한국문화관광연구원</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="low2">
+                    <div class="click-this b1"><p>click</p></div>
+                    <div class="chart2">
+                        <div class="chart2-1">
+                            <h4>연도별 모집 금액 및 펀딩 성공률</h4>
+                            <img src="./images/chart2-1.png" alt="연도별 모집 금액 및 펀딩 성공률 차트">
+                            <div class="source"><p>출처: 와디즈</p></div>
+                        </div>
+                        <div class="chart2-2">
+                            <h4>Q. 로컬 크라우드 펀딩을 통해 지역 혹은 공간이<br>개선된다면 참여하실 의향이 있으십니까?</h4>
+                            <img src="./images/chart2-2.png" alt="크라우드 펀딩 참여 희망 차트">
+                            <div class="source"><p>출처: 자체 설문조사</p></div>
+                        </div>
+                    </div>
+                    <div class="sum2">
+                        <h2>크라우드 펀딩과 로컬문화</h2>
+                        <p>지역이 가치로 소비되는 다양한 로컬 문화와 크라우드 펀딩의 대한 <br><span>대중의 관심이 증가하고 있습니다.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--청미동 서비스 소개-->
+        <div class="section s4">
+            <div class="s4-container">
+                <div class="service-key">
+                    <h2>우리동네 로컬 아트테리어 서비스</h2>
+                </div>
+                <div class="service-title">
+                    <h1>청미동<span>靑美洞</span></h1>
+                    <div class="blueBox"></div>
+                </div>
+                <div class="service-sum">
+                    <h4>푸를 청(靑) + 아름다울 미(美)</h4>
+                    <p>청미동은 젊은 청년들이 만들어 가는 아름다운 동네라는 뜻이며<br><span>기존 아트테리어 사업의 문제점을 보완한 새로운 모바일 플랫폼</span>으로<br>아티스트와 소상공인의 연결을 통해 동네 가게를 새롭게 리뉴얼할 수 있는 서비스입니다.</p>
+                </div>
+            </div>
+        </div>
+        <!--서비스 기능, 구조 트랜지션-->
+        <div class="section s5">
+            <div class="s5-container">
+                <div class="service-title-1">
+                    <h2>로컬 아트테리어 펀딩 서비스, <span>청미동</span></h2>
+                </div>
+                <div class="milestone">
+                    <div class="func-btn"><h3>서비스 기능</h3></div>
+                    <div class="click-this b4"><p>click</p></div>
+                    <div class="const-btn"><h3>서비스 구조</h3></div>
+                </div>
+                <div class="func">
+                    <div class="func-title">
+                        <h4>서비스 기능</h4>
+                        <p>소상공인과 아티스트 매칭을 통해 함께 함께 협업할 수 있도록 이어주며<br>지역 주민의 후원을 통해 새로운 지역 문화를 주도해 나갑니다.</p>
+                    </div>
+                    <div class="func-chart">
+                        <div class="click-this b2"><p>click</p></div>
+                        <div class="click-this b3"><p>click</p></div>
+                        <img class="func1" src="./images/func1.png" alt="청미동 서비스 기능">
+                        <img class="func2" src="./images/func2.png" alt="청미동 서비스 기능">
+                        <img class="func3" src="./images/func3.png" alt="청미동 서비스 기능">
+                    </div>
+                </div>
+                <div class="const">
+                    <div class="const-title">
+                        <h4>서비스 구조</h4>
+                        <p>청미동은 단독 플랫폼이 아닌 정부와 지역주민, 소상공인과 아티스트를 연결하는<br>연계 플랫폼의 형식을 갖추고 있습니다. 기존 정부가 주도하던 아트테리어 사업을<br>플랫폼으로 변환하여 정부 - 지역주민 - 소상공인 - 아티스트를 이어주는 역할을<br>담당하고자 합니다.</p>
+                    </div>
+                    <div class="const-chart">
+                        <img src="./images/const.png" alt="청미동 서비스 구조">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--기대효과-->
+        <div class="section s6">
+            <div class="s6-container">
+                <div class="effect-wrap">
+                    <div class="effect">
+                        <div class="effect-title">
+                            <h2>청미동,</h2>
+                        </div>
+                        <div class="effect-change">
+                            <h2>우리의 기대효과입니다.</h2>
+                        </div>
+                        <div class="effect-change2">
+                            <h2>모두에게 도움이 되기를.</h2>
+                        </div>
+                    </div>
+                    <div class="effect-chart">
+                        <div class="effect-circle1">
+                            <h1>01</h1>
+                            <p>소상공인의 경쟁력 강화와<br>아티스트들의 일자리 창출</p>
+                        </div>
+                        <div class="click-this b5"><p>click</p></div>
+                        <div class="effect-circle2">
+                            <h1>02</h1>
+                            <p>지역주민의 참여로 인한<br>로컬 문화 활성화</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--디자인 전략-->
+        <div class="section s7">
+            <div class="s7-container">
+                <div class="design-title">
+                    <h2>청미동의 아름다움은 이렇게 표현합니다.</h2>
+                </div>
+                <div class="design-low1">
+                    <div class="design-key">
+                        <div class="key-sum">
+                            <h2>디자인 키워드</h2>
+                            <p>청미동의 서비스 성격에 맞게 젊고 활발하면서<br>한국의 지역문화를 느낄수 있도록 키워드를 선정하였습니다.</p>
+                        </div>
+                        <div class="key-graphic">
+                            <div class="key1"><h2>創意</h2><p>창의</p></div>
+                            <div class="key2"><h2>疏通</h2><p>소통</p></div>
+                            <div class="key3"><h2>韓國美</h2><p>한국미</p></div>
+                        </div>
+                    </div>
+                    <div class="click-this b6"><p>click</p></div>
+                    <div class="design-color">
+                        <div class="color-sum">
+                            <h2>색상</h2>
+                            <p>창의성을 뜻하는 메인 색상 파란색과<br>예술과 소통을 나타내는 서브 색상 노란색을 사용합니다.</p>
+                        </div>
+                        <div class="color-graphic">
+                            <div class="blue">
+                                <div class="color-title"><h4>HEX</h4><br><h4>RGB</h4><br><h4>CMYK</h4></div>
+                                <div class="color-value"><h4>#1FAFFF</h4><br><h4>31&nbsp;&nbsp;175&nbsp;&nbsp;255</h4><br><h4>88&nbsp;&nbsp;31&nbsp;&nbsp;0&nbsp;&nbsp;0</h4></div>
+                            </div>
+                            <div class="yellow">
+                                <div class="color-title"><h4>HEX</h4><br><h4>RGB</h4><br><h4>CMYK</h4></div>
+                                <div class="color-value"><h4>#FFC000</h4><br><h4>255&nbsp;&nbsp;192&nbsp;&nbsp;0</h4><br><h4>0&nbsp;&nbsp;25&nbsp;&nbsp;100&nbsp;&nbsp;0</h4></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="design-low2">
+                    <div class="click-this b7"><p>click</p></div>
+                    <div class="design-logo">
+                        <div class="logo-sum">
+                            <h2>로고</h2>
+                            <p>도장 문양을 바탕으로 신뢰감과 동양적인 미를 더해주는<br>로고 내부에 아이콘을 삽입해 다양한 활용이 가능합니다.</p>
+                        </div>
+                        <div class="logo-graphic">
+                            <div class="logo1"><img src="./images/logo1.png" alt="펀딩 로고"><img src="./images/logo2.png" alt="프로젝트 로고"><img src="./images/logo3.png" alt="매칭 로고"></div>
+                            <div class="logo-line"></div>
+                            <div class="logo2"><img src="./images/logo4.png" alt="하트 로고"></div>
+                        </div>
+                    </div>
+                    <div class="click-this b8"><p>click</p></div>
+                    <div class="design-type">
+                        <div class="type-sum">
+                            <h2>서체</h2>
+                            <p>직관적으로 내용을 전달할 수 있는 본고딕과<br>한국적 미를 더해줄 본명조를 사용했습니다.</p>
+                        </div>
+                        <div class="type-graphic">
+                            <div class="type1"><h1>푸르게 잇자, 아름다운 우리동네.</h1><h2>푸르게 잇자, 아름다운 우리동네.</h2><h3>푸르게 잇자, 아름다운 우리동네.</h3><h4>푸르게 잇자, 아름다운 우리동네.</h4></div>
+                            <div class="type2"><h1>푸르게 잇자, 아름다운 우리동네.</h1><h2>푸르게 잇자, 아름다운 우리동네.</h2><h3>푸르게 잇자, 아름다운 우리동네.</h3><h4>푸르게 잇자, 아름다운 우리동네.</h4></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--서비스 : 매칭,프로젝트 -->
+        <div class="section s8">
+            <div class="blue-line"></div>
+            <div class="s8-container">
+                <div class="s8-flexwrap">
+                    <div class="app1-l1">
+                        <div class="app1-sum">
+                            <h2>01</h2>
+                            <h3>매칭과 프로젝트 관리</h3>
+                            <p>매칭 서비스를 통해 원하는 가게, 아티스트와 쉽게 매칭될 수 있으며<br>다양한 협업 툴을 통해 프로젝트를 효율적으로 관리 할 수 있습니다.</p>
+                        </div>
+                        <div class="app1-i">
+                            <img src="./images/app1-1.png" alt="매칭현황">
+                        </div>
+                    </div>
+                    <div class="app1-l2">
+                        <div class="proto">
+                            <div class="proto-click b9"><p>click</p></div>
+                            <div class="proto-click b10"><p>click</p></div>
+                            <div class="proto-click b11"><p>click</p></div>
+                            <div class="proto-click b12"><p>click</p></div>
+                            <div class="proto-click b13"><p>click</p></div>
+                            <div class="frame"><img src="./images/frame_test.png" alt="frame"></div>
+                            <div class="proto-1-1"><img src="./images/proto1-1.png" alt=""></div>
+                            <div class="proto-1-2"><img src="./images/proto1-2.png" alt=""></div>
+                            <div class="proto-1-3"><img src="./images/proto1-3.png" alt=""></div>
+                            <div class="proto-1-4"><img src="./images/proto1-4.png" alt=""></div>
+                            <div class="proto-1-5"><img src="./images/proto1-5.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--서비스 : 펀딩 -->
+        <div class="section s9">
+            <div class="blue-line2"></div>
+            <div class="s9-container">
+                <div class="s9-flexwrap">
+                    <div class="app2-l1">
+                        <div class="proto2-1">
+                            <div class="proto-click b14"><p>click</p></div>
+                            <div class="proto-click b15"><p>click</p></div>
+                            <div class="proto-click b16"><p>click</p></div>
+                            <div class="frame2"><img src="./images/frame_test.png" alt="frame"></div>
+                            <div class="proto-2-1"><img src="./images/proto2-1.png" alt=""></div>
+                            <div class="proto-2-2"><img src="./images/proto2-2.png" alt=""></div>
+                            <div class="proto-2-3"><img src="./images/proto2-3.png" alt=""></div>
+                        </div>
+                        <div class="app2-sum1">
+                            <div class="app2-sum-h">
+                                <h2>02</h2>
+                                <h3>펀딩하기</h3>
+                            </div>
+                            <div class="app2-sum-p">
+                                <p>카테고리별로 지역 펀딩 상품을 후원할 수 있고<br>타임라인을 통해 지속적으로 창작자와 소통할 수 있습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="app2-l2">
+                        <div class="app2-sum2">
+                            <h2>03</h2>
+                            <h3>우수 프로젝트</h3>
+                            <p>지금까지 진행된 펀딩 프로젝트 중 가장 인기가 많고<br>영향력 있었던 프로젝트를 볼 수 있습니다.</p>
+                        </div>
+                        <div class="proto2-2">
+                            <div class="proto-click b17"><p>click</p></div>
+                            <div class="proto-click b18"><p>click</p></div>
+                            <div class="frame2-2"><img src="./images/frame_test.png" alt="frame"></div>
+                            <div class="proto-2-4"><img src="./images/proto2-4.png" alt=""></div>
+                            <div class="proto-2-5"><img src="./images/proto2-5.png" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--서비스 : 제안하기 -->
+        <div class="section s10">
+            <div class="s10-container">
+                <div class="s10-flexwrap">
+                    <div class="proto3">
+                        <div class="proto-click b19"><p>click</p></div>
+                        <div class="proto-click b20"><p>click</p></div>
+                        <div class="frame3"><img src="./images/frame_test.png" alt="frame"></div>
+                        <div class="proto-3-1"><img src="./images/proto3-1.png" alt=""></div>
+                        <div class="proto-3-2"><img src="./images/proto3-2.png" alt=""></div>
+                    </div>
+                    <div class="app3-i">
+                        <div class="if"><img src="./images/app3-1.png" alt="제안하기"></div>
+                        <div class="is"><img src="./images/app3-2.png" alt="제안하기 내용"></div>
+                        <div class="ib"><img src="./images/app3-3.png" alt="제안하기 백"></div>
+                    </div>
+                </div>
+                <div class="app3-sum">
+                    <h2>04</h2>
+                    <h3>시민 제안</h3>
+                    <p>지역주민들의 이야기를 듣고 직접 지역 아이디어를 제안 할 수 있고<br>지방정부의 검토 과정을 실시간으로 확인하며<br>지역주민 스스로 우리 동네를 개선하고 발전시킬 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+        <!--클로징 -->
+        <div class="section s11">
+            <div class="s11-container">
+                <video id="lastVideo" loop muted data-autoplay>
+                    <source src="./images/lastpage.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <!--팀원 소개 -->
+        <div class="section s12">
+            <div class="s12-container">
+                <!-- <div class="thanks">
+                    <h2>감사합니다. 저희는 TeamUSA입니다.</h2>
+                </div> -->
+                <div class="profile-wrap">
+                    <div class="kimhaeun">
+                        <div class="p-pic"><img src="./images/kimhaeun.png" alt="김하은"></div>
+                        <div class="p-title"><h4>기획자</h4><h2>김하은</h2><p>Kim Haeun<br>/ UX Planner</p></div>
+                        <div class="p-circle"><p>Project Planning</p></div>
+                    </div>
+                    <div class="kimhyunmin">
+                        <div class="p-pic"><img src="./images/kimhyunmin.png" alt="김현민"></div>
+                        <div class="p-title"><h4>개발자</h4><h2>김현민</h2><p>Kim Hyunmin<br>/ Developer</p></div>
+                        <div class="p-circle"><p>Team Leader & Web</p></div>
+                    </div>
+                    <div class="choisuyoung">
+                        <div class="p-pic"><img src="./images/choisuyoung.png" alt="최수영"></div>
+                        <div class="p-title"><h4>디자이너</h4><h2>최수영</h2><p>Choi Suyoung<br>/ Designer</p></div>
+                        <div class="p-circle"><p>Video & CI</p></div>
+                    </div>
+                    <div class="hwanginkeom">
+                        <div class="p-pic"><img src="./images/hwanginkeom.png" alt="황인검"></div>
+                        <div class="p-title"><h4>디자이너</h4><h2>황인검</h2><p>Hwang Inkeom<br>/ Designer</p></div>
+                        <div class="p-circle"><p>BX</p></div>
+                    </div>
+                    <div class="kimyujeong">
+                        <div class="p-pic"><img src="./images/kimyujeong.png" alt="김유정"></div>
+                        <div class="p-title"><h4>디자이너</h4><h2>김유정</h2><p>Kim Yujeong<br>/ Designer</p></div>
+                        <div class="p-circle"><p>UI/UX</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--출처 표기 -->
+        <div class="section s13">
+            <div class="s13-container">
+                <div class="source-wrap">
+                    <div class="c1">
+                        <div class="source-title"><h3>사진</h3></div>
+                        <div class="source-image">
+                            <div class="is-1">
+                                <a target="_blank" href="https://unsplash.com/photos/Via0Hy2rYIc">https://unsplash.com/photos/Via0Hy2rYIc</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/IDcAu0ng9J4">https://unsplash.com/photos/IDcAu0ng9J4</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/jr0GJG8VJNw">https://unsplash.com/photos/jr0GJG8VJNw</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/T8psV37DEgM">https://unsplash.com/photos/T8psV37DEgM</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/t5dGNNQVwg8">https://unsplash.com/photos/t5dGNNQVwg8</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/IStZpF3ZeiQ">https://unsplash.com/photos/IStZpF3ZeiQ</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/Erld-XTqXv0">https://unsplash.com/photos/Erld-XTqXv0</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/tnlFaatMi_k">https://unsplash.com/photos/tnlFaatMi_k</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/DVpfmqOZT_Y">https://unsplash.com/photos/DVpfmqOZT_Y</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/H03ICERuJIA">https://unsplash.com/photos/H03ICERuJIA</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/QNEzbAABsxg">https://unsplash.com/photos/QNEzbAABsxg</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/uxZYlrlw1v0">https://unsplash.com/photos/uxZYlrlw1v0</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/vNT1YUY94vc">https://unsplash.com/photos/vNT1YUY94vc</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/e5QfGsrdgK4">https://unsplash.com/photos/e5QfGsrdgK4</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/8U5SmTQPuC4">https://unsplash.com/photos/8U5SmTQPuC4</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/A0sgFwVCsQw">https://unsplash.com/photos/A0sgFwVCsQw</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/uLh3tTzEqCs">https://unsplash.com/photos/uLh3tTzEqCs</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/5KdzJxYu2Aw">https://unsplash.com/photos/5KdzJxYu2Aw</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/7y1G31Ro5tM">https://unsplash.com/photos/7y1G31Ro5tM</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/Db0O2NYByNU">https://unsplash.com/photos/Db0O2NYByNU</a><br>
+                            </div>
+                            <div class="is-2">
+                                <a target="_blank" href="https://unsplash.com/photos/H-ippg_Raug">https://unsplash.com/photos/H-ippg_Raug</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/-BjAQ218NaM">https://unsplash.com/photos/-BjAQ218NaM</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/M97Tbg30AQI">https://unsplash.com/photos/M97Tbg30AQI</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/9SVF3k9FFzU">https://unsplash.com/photos/9SVF3k9FFzU</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/DBaVQ2rALYU">https://unsplash.com/photos/DBaVQ2rALYU</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/R2xekIdvw28">https://unsplash.com/photos/R2xekIdvw28</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/PydfefMY8GQ">https://unsplash.com/photos/PydfefMY8GQ</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/cpRl5JtaSCo">https://unsplash.com/photos/cpRl5JtaSCo</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/xpX7EPRtd-8">https://unsplash.com/photos/xpX7EPRtd-8</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/ldGugwE5ur4">https://unsplash.com/photos/ldGugwE5ur4</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/6SFQt2g1a64">https://unsplash.com/photos/ldGugwE5ur4</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/uuuU4Nauj2A">https://unsplash.com/photos/uuuU4Nauj2A</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/nlLII3H_tcY">https://unsplash.com/photos/nlLII3H_tcY</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/BnUlGBaddEM">https://unsplash.com/photos/BnUlGBaddEM</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/yCosNZ2jMuk">https://unsplash.com/photos/yCosNZ2jMuk</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/V_2UbSfVigw">https://unsplash.com/photos/V_2UbSfVigw</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/e59Y6vqbL7Y">https://unsplash.com/photos/e59Y6vqbL7Y</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/-e6Xu27_T50">https://unsplash.com/photos/-e6Xu27_T50</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/LrZLe1czeDo">https://unsplash.com/photos/LrZLe1czeDo</a><br>
+                                <a target="_blank" href="https://unsplash.com/photos/Z1D7bq3gFZs">https://unsplash.com/photos/Z1D7bq3gFZs</a><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c2">
+                        <div class="source-title2"><h3>영상</h3></div>
+                        <div class="source-video">
+                            <a target="_blank" href="https://pixabay.com/videos/id-29777/">https://pixabay.com/videos/id-29777/</a><br>
+                            <a target="_blank" href="https://pixabay.com/videos/id-49658/">https://pixabay.com/videos/id-49658/</a><br>
+                            <a target="_blank" href="https://pixabay.com/videos/id-7508/">https://pixabay.com/videos/id-7508/</a><br>
+                            <a target="_blank" href="https://pixabay.com/videos/id-26353/">https://pixabay.com/videos/id-26353/</a><br>
+                            <a target="_blank" href="https://pixabay.com/videos/id-41391/">https://pixabay.com/videos/id-41391/</a><br>
+                            <a target="_blank" href="https://pixabay.com/videos/id-41392/">https://pixabay.com/videos/id-41392/</a><br>
+                            <a target="_blank" href="https://www.videvo.net/video/bricklayer-mid-shot/3678/">https://www.videvo.net/video/bricklayer-mid-shot/3678/</a><br>
+                            <a target="_blank" href="https://www.videvo.net/video/man-painting-wall/6260/">https://www.videvo.net/video/man-painting-wall/6260/</a><br>
+                            <a target="_blank" href="https://www.videvo.net/video/couple-walking-through-seoul/456636/">https://www.videvo.net/video/couple-walking-through-seoul/456636/</a><br>
+                            <a target="_blank" href="https://www.videvo.net/video/tracking-legs-crossing-wet-street/454927/">https://www.videvo.net/video/tracking-legs-crossing-wet-street/454927/</a><br>
+                            <a target="_blank" href="https://www.videvo.net/video/carrying-fresh-seafood-at-hong-kong-market/8060/">https://www.videvo.net/video/carrying-fresh-seafood-at-hong-kong-market/8060/</a><br>
+                            <a target="_blank" href="https://www.pexels.com/photo/people-painting-the-street-with-a-mural-4808769/ ">https://www.pexels.com/photo/people-painting-the-street-with-a-mural-4808769/</a><br>
+                        </div>
+                        <div class="source-title3"><h3>음악</h3></div>
+                        <div class="source-music">
+                            <a target="_blank" href="https://www.premiumbeat.com/ko/royalty-free-tracks/silver-and-gold">https://www.premiumbeat.com/ko/royalty-free-tracks/silver-and-gold</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/fullpage.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
