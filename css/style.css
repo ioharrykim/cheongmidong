@@ -53,7 +53,8 @@ nav ul {
     padding-left: 0;
 }
 
-nav ul li { list-style: none; }
+nav ul li { list-style: none; 
+    animation: fadeInRight 1s ease;}
 
 nav ul li a {
     font-family: 'Noto Serif KR', serif;
@@ -70,12 +71,13 @@ nav img {
     width: 150px;
     margin-top: 40vh;
     cursor: pointer;
+    animation: fadeInLeft 1s ease;
 }
 
 .navbar-toggle {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 3em;
+    right: 3em;
     width: 45px;
     height: 45px;
     z-index: 20;
@@ -315,10 +317,10 @@ nav img {
     z-index: 3000;
     margin-top: 245px;
     margin-left: 295px;
-    background-color: #fff;
+    background-color: #FFC000;
 }
 .b21 p {
-    color: #1fafff;
+    color: #fff;
 }
 .b22 {
     display: none;
@@ -583,6 +585,7 @@ nav img {
     display: flex;
     justify-content: space-between;
     margin-bottom: 150px;
+    animation: fadeInLeft 1s ease;
 }
 .chart1 {
     display: flex;
@@ -705,6 +708,7 @@ nav img {
     width: 1200px;
     margin: 0 auto;
     display: none;
+    animation: fadeInLeft 1s ease;
 }
 .service-key h2 {
     font-family: 'Noto Serif KR', serif;
@@ -1377,11 +1381,14 @@ nav img {
     margin-right: 20px;
 }
 
-/* SECTION10 - 서비스: 매칭과 프로젝트 관리 */
+/* SECTION10 - 목업 1 페이지 */
 .s10 {
     width: 100%;
     height: 100vh;
-    background-color: #fff;
+    background-image: url(../images/mockup1_b.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .s10-container {
     width: 1200px;
@@ -1389,7 +1396,73 @@ nav img {
     margin: 0 auto;
     display: none;
 }
-.s10-flexwrap {
+.mockup-title {
+    padding-top: 100px;
+}
+.mockup-title h1 {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 2rem;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+/* SECTION11 - 목업 2 페이지 */
+.s11 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/mockup2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.s11-container {
+    width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    display: none;
+}
+/* SECTION12 - 목업 3 페이지 */
+.s12 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/mockup3.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.s12-container {
+    width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    display: none;
+}
+/* SECTION13 - 목업 4 페이지 */
+.s13 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/mockup4.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.s13-container {
+    width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    display: none;
+}
+/* SECTION14 - 서비스: 매칭과 프로젝트 관리 */
+.s14 {
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+}
+.s14-container {
+    width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    display: none;
+}
+.s14-flexwrap {
     display: flex;
     justify-content: center;
 }
@@ -1527,19 +1600,19 @@ nav img {
     margin-top: 80px;
 } */
 
-/* SECTION11 - 서비스: 펀딩 */
-.s11 {
+/* SECTION15 - 서비스: 펀딩 */
+.s15 {
     width: 100%;
     height: 100vh;
     background-color: #fff;
 }
-.s11-container {
+.s15-container {
     width: 1200px;
     height: 100vh;
     margin: 0 auto;
     display: none;
 }
-.s11-flexwrap {
+.s15-flexwrap {
     display: flex;
     justify-content: center;
 }
@@ -1672,19 +1745,19 @@ nav img {
     z-index: 6;
 }
 
-/* SECTION12 - 서비스: 제안하기 */
-.s12 {
+/* SECTION16 - 서비스: 제안하기 */
+.s16 {
     width: 100%;
     height: 100vh;
     background-color: #fff;
 }
-.s12-container {
+.s16-container {
     width: 1200px;
     height: 100vh;
     margin: 0 auto;
     display: none;
 }
-.s12-flexwrap {
+.s16-flexwrap {
     display: flex;
     width: 1200px;
     margin: 0 auto;
@@ -1791,19 +1864,19 @@ nav img {
     margin-right: 180px;
 } */
 
-/* SECTION13 - 커뮤니티 */
-.s13 {
+/* SECTION17 - 커뮤니티 */
+.s17 {
     width: 100%;
     height: 100vh;
     background-color: #fff;
 }
-.s13-container {
+.s17-container {
     width: 1200px;
     height: 100vh;
     margin: 0 auto;
     display: none;
 }
-.s13-flexwrap {
+.s17-flexwrap {
     display: flex;
     justify-content: center;
 }
@@ -1890,19 +1963,19 @@ nav img {
     z-index: 4;
 }
 
-/* SECTION14 - 마이페이지 */
-.s14 {
+/* SECTION18 - 마이페이지 */
+.s18 {
     width: 100%;
     height: 100vh;
     background-color: #fff;
 }
-.s14-container {
+.s18-container {
     width: 1200px;
     height: 100vh;
     margin: 0 auto;
     display: none;
 }
-.s14-flexwrap {
+.s18-flexwrap {
     display: flex;
     justify-content: center;
 }
@@ -2017,24 +2090,20 @@ nav img {
     z-index: 5;
 }
 
-/* SECTION15 - 목업 1 */
-/* SECTION16 - 목업 2 */
-/* SECTION17 - 목업 3 */
-
-/* SECTION18 - 클로징 */
-.s15 {
+/* SECTION19 - 클로징 */
+.s19 {
     width: 100%;
     height: 100vh;
     z-index: -100;
     background-color: #1fafff;
 }
-.s15-container {
+.s19-container {
     width: 1200px;
     height: 100vh;
     margin: 0 auto;
     display: none;
 }
-.s15 {
+.s19 {
     text-align: center;
     overflow: hidden;
 }
@@ -2053,14 +2122,15 @@ nav img {
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
     cursor: pointer;
+    color: #fff;
 }
 .proto-layer h1 {
     font-family: 'Noto Serif KR', serif;
     font-weight: 400;
     font-size: 0.9rem;
-    color: #fff;
+    cursor: pointer;
 }
-.s15 video::-webkit-media-controls {
+.s19 video::-webkit-media-controls {
     display:none;
 }
 #lastVideo{
@@ -2078,14 +2148,14 @@ nav img {
     object-fit: cover; /*cover video background */
     z-index:3;
 }
-/* SECTION19 - 팀원소개 */
-.s16 {
+/* SECTION20 - 팀원소개 */
+.s20 {
     width: 100%;
     height: 100vh;
     z-index: -100;
     background-color: #fff;
 }
-.s16-container {
+.s20-container {
     width: 1200px;
     margin: 0 auto;
     display: none;
@@ -2130,19 +2200,31 @@ nav img {
 }
 .p-circle {
     width: 220px;
-    height: 220px;
+    height: 100px;
     border-radius: 220px;
     border: solid 2px #1fafff;
     margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
 .p-circle p {
     color: #1fafff;
-    line-height: 220px;
+    line-height: 1.6;
     font-weight: 600;
+    cursor: pointer;
+}
+.p-circle p span {
+    color: #303030;
+    font-size: 0.7rem;
+    font-weight: 600;
+    cursor: pointer;
+
 }
 
-/* SECTION20 - 출처 표기 */
-.s17 {
+/* SECTION21 - 출처 표기 */
+.s21 {
     width: 100%;
     height: 100vh;
     z-index: -100;
@@ -2150,7 +2232,7 @@ nav img {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.s17-container {
+.s21-container {
     width: 1200px;
     margin: 0 auto;
     display: none;
@@ -2697,12 +2779,14 @@ nav img {
         -webkit-transform: translate3d(0,0,0);
         -ms-transform: translate3d(0,0,0);
         transform: translate3d(0,0,0);
+        cursor: pointer;
+        color: #fff;
     }
     .proto-layer h1 {
         font-family: 'Noto Serif KR', serif;
         font-weight: 400;
         font-size: 0.9rem;
-        color: #fff;
+        cursor: pointer;
     }
     /* 출처 표기 */
     .source-wrap a {
