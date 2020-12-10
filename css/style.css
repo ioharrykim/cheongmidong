@@ -459,11 +459,13 @@ nav img {
 }
 #title-video {
     width: 960px;
+    height: 540px;
 }
 .video-text h3 {
     font-size: 0.8rem;
     margin-bottom: 20px;
 }
+
 
 
 /* SECTION2 - 아트테리어 */
